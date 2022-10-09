@@ -1,5 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
-from image_predictor import ImagePredictor
+from .image_predictor import ImagePredictor
 from PIL import Image
 import io
 
