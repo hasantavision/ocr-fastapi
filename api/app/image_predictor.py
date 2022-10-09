@@ -1,9 +1,10 @@
 import easyocr
 from PIL import Image
 
-class ImagePredictor:
 
-    def init_ocr(self):
+class ImagePredictor:
+    @staticmethod
+    def init_ocr():
         return easyocr.Reader(['id', 'en'], model_storage_directory="/code/app/model")
 
     def predict_from_file(self, file_object):
