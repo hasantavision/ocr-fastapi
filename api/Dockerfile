@@ -16,5 +16,3 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 # 
 COPY ./app /code/app
-
-FROM python:3.10.4-slim-bullseye
